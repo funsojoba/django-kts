@@ -4,10 +4,10 @@ metadata:
   name: app-service
 spec:
   selector:
-    app: app-service
+    app: django-app
   type: ClusterIP
   ports:
-  - name: app-service
-    port: 8000
-    targetPort: 8000
-    protocol: TCP
+    - name: app-service
+      port: 8000
+      targetPort: 8000
+      protocol: TCP
