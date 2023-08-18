@@ -9,9 +9,9 @@ services:
     image: django-k8s:v1
     env_file: ./web/.env
     environment:
-      - PORT=8001
+      - PORT=8000
     ports:
-      - "8000:8001"
+      - "8000:8000"
     command: sh -c "chmod +x /app/migrate.sh && sh /app/migrate.sh && /app/entrypoint.sh"
   postgres_db:
     image: postgres
