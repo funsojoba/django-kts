@@ -1,4 +1,5 @@
-COMPOSE=web
+SERVICE=web
+COMPOSE=compose
 
 
 up:
@@ -6,3 +7,6 @@ up:
 
 down:
 	docker compose down
+
+enter:
+	docker $(COMPOSE) exec $(SERVICE) python manage.py shell

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: django-config-map
+data:
+  DEBUG: "True"
+  DB_HOST: "postgres-service"
